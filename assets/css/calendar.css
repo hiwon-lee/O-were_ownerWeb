@@ -1,0 +1,26 @@
+@import url(colorZip.css);
+
+/*=====CALENDAR TOP=====*/
+.calendarTitle {
+    display: flex;
+}
+.todayTitle {
+    font-size: var(--tinyfont);
+    color: var(--bs-gray);
+    margin:0;
+}
+/* calendar toggler */
+.calendarToggler {
+    display: inline-block;
+    border: 1px solid var(--separatedColor);
+    border-radius: 75px;
+}
+.calendarToggler button {
+    font-size: var(--tinyfont);
+    padding:4px 1rem;
+}
+.calendarToggler button.active {
+    background-color: var(--firstMainColor);
+    border-radius: 75px;
+    color:var(--bs-white);
+}

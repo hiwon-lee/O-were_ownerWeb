@@ -1,0 +1,9 @@
+
+.storageSearchContainer {
+    width:100%;
+    margin:1.5rem auto;
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+}

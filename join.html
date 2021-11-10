@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>join</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id = "header">
+                <div class="logo">
+                    <img src="assets/src/O'were 로고.svg" style="width: 190px;">
+                </div>
+                <div class="order">
+                    <hr class="line">
+                    <span class="circle1" id="full">1</span> 
+                    <span class="circle2" id="blank">2</span> 
+                    <span class="circle3" id="blank">3</span> 
+                    <span class="circle4" id="blank">4</span>
+                </div>
+            </div>
+            <div id = "joinContent">
+                <h2 style="font-weight: bold;">오월 가게 등록을 위해</h2>
+                <h2 style="font-weight: bold;">다음과 같은 서류들을 준비해주세요.</h2>
+                <div class="btn-document">
+                    <label class="input-file-btn" for="btn1">
+                        <img src="assets/src/print_black_24dp.svg" style="width: 56px; height: 56px;"><h6 style="color: #939393;">사업자등록증</h6></label>
+                        <input type="file" id="btn1" style="display:none"   accept="image/*,.pdf">
+                    <label class="input-file-btn" for="btn2">
+                        <img src="assets/src/print_black_24dp.svg" style="width: 56px;"><h6 style="color: #939393;">영업신고증</h6></label>
+                        <input type="file" id="btn2" style="display:none"  accept="image/*,.pdf">
+                    <label class="input-file-btn" for="btn3">
+                        <img src="assets/src/print_black_24dp.svg" style="width: 56px;"><h6 style="color: #939393;">통장사본</h6></label>
+                        <input type="file" id="btn3" style="display:none"  accept="image/*,.pdf">
+                </div>
+                <h6 class="caution">* 위의 서류들은 출력 후 스캔 혹은 촬영해서 이미지 파일로 준비해주세요.</h6>
+                <div class="btn-bottom">
+                    <button class="back"  onclick="location.href='login.html'">
+                        <span class="material-icons">arrow_back_ios</span>
+                        <span class="text">이전</span>
+                    </button> 
+                    <button class="next" onclick="location.href='authentication.html'">
+                        <span class="text">다음</span>
+                        <span class="material-icons">arrow_forward_ios</span>
+                    </button>
+                </div>
+                    
+            </div> 
+        </div>
+    
+    </body>
+    <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+</html>

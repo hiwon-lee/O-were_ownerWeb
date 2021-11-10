@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/registrationStyle.css">
+
+
+<title>Document</title>
+</head>
+
+<body>
+<div class="bd-layout">
+    <!-- side menu bar -->
+    <aside class="bd-sidebar shadow">
+        <div class="logo">
+            <img src="assets/src/owereLogo.png" alt="o`were">
+        </div>
+        <div class="searchForm">
+            <div class="ps-2">
+                    <img src="assets/src/searchIcon.png">
+            </div>
+            <div>
+                <form class="searchBox">
+                    <input type="text" placeholder="검색">
+                </form>
+            </div>
+        </div>
+
+        <nav class="bd-links mb-auto">
+            <ul class="sidebarList list-unstyled ps-0">
+
+                <li class="">
+                  <button class="btn btn-normal align-items-center rounded collapsed " data-bs-toggle="collapse" data-bs-target="#reservation-collapse" aria-expanded="false" onclick="location.href='reservationMonthly.html'" id="asideForm">
+                          예약
+                  </button>
+                </li>
+                
+                <li>
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#stock-collapse" aria-expanded="false" onclick="location.href='storage.html'" id="asideForm">
+                    재고
+                  </button>
+                  <div class="collapse" id="stock-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="storage.html" class="link-dark rounded " id="asideForm">재고 현황</a></li>
+                      <li><a href="storage_tinyenroll.html" class="link-dark rounded " id="asideForm">개별 재고 등록</a></li>
+                      <li><a href="storage_hugeenroll.html" class="link-dark rounded " id="asideForm">대량 재고 등록</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <button class="btn btn-normal align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#chatting-collapse" aria-expanded="false" onclick="location.href='chatting.html'" id="asideForm">
+                    채팅
+                  </button> 
+                </li>
+
+                <li>
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#salon-collapse" aria-expanded="true" onclick="location.href='profile.html'" id="asideForm">
+                    내 미용실
+                  </button>
+                  <div class="" id="salon-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="profile.html" class="link-dark rounded" id="asideForm">MY</a></li>
+                      <li><a href="registrationTimeSeat.html" class="link-dark rounded activeButton" id="asideForm">시간 및 좌석 등록</a></li>
+                      <li><a href="reView.html" class="link-dark rounded " id="asideForm">리뷰 관리</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#recruitment-collapse" aria-expanded="false" onclick="location.href='designer.html'" id="asideForm">
+                      디자이너 관리
+                    </button>
+                    <div class="collapse" id="recruitment-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="designer.html" class="link-dark rounded" id="asideForm">디자이너 목록 관리</a></li>
+                        <li><a href="reservationManage.html" class="link-dark rounded" id="asideForm">예약 관리</a></li>
+                        
+                      </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="btn btn-normal align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#calculate-collapse" aria-expanded="false" onclick="location.href='calculate.html'" id="asideForm">
+                        정산
+                    </button>
+                </li>
+
+            </ul>  
+        </nav>
+        <div class="bottomNav">
+            <ul class="list-unstyled border-top py-2 mb-0">
+                <li class="my-2">
+                    <a href="setting.html">설정</a>
+                </li>
+                <li class="my-1">
+                    <a href="#">도움말</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="bottomNav border-top pt-2 my-2">로그아웃</div>
+    </aside> 
+        
+    <main class="bd-main">
+        <div class="bd-navTop">
+            <div class="st-actionContainer right-bottom">
+                <div class="st-btn-container right-bottom">
+                    <div class="st-button-main">
+                        <img src="assets/src/icon/notificationIcon.png">
+                    </div>
+                </div>
+                <div class="st-panel">
+                    <div class="st-panel-header">
+                        <div>알림</div>
+                        <div>
+                            <input type="checkbox">모두읽음</span>
+                        </div>
+                    </div>
+                    <div class="st-panel-contents">
+                        <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <button class="btn">menu list</button> -->
+        </div>
+        <div class="bd-mainContent">
+            <div class="row">
+                <h5>시간 및 좌석 등록</h5>
+            </div>
+            <div class="row g-3">
+                <div class="col-8">
+                    <h6>정기시간 및 유휴좌석 등록</h6>
+                    <div class="shadowingBox">
+                        <div class="text-end">
+                            <button class="btn ms-auto btn-normal border">변경하기</button>
+
+                        </div>
+                       
+                        <form >
+                            <fieldset >
+                                <div class="d-flex">
+                                    <div>미용실 좌석 수 : 
+                                        <input type="number">개
+                                    </div>
+                                   
+                                </div>
+                                <table class="table align-middle">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">요일</th>
+                                        <th scope="col">휴무일</th>
+                                        <th scope="col">운영시간</th>
+                                        <th scope="col">유휴좌석</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">월</th>
+                                        <td id="monIsRun">
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input id="monStart" type="time" step="900" > ~  <input id="monEnd" type="time" step="900" >
+    
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">화</th>
+                                        <td id="tueIsRun">
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input id="tueStart" type="time" step="900" > ~  <input id="tueEnd" type="time" step="900" >
+    
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">수</th>
+                                        <td id="wedIsRun">
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input id="wedStart" type="time" step="900" > ~  <input id="wedEnd" type="time" step="900" >
+    
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">목</th>
+                                        <td id="thuIsRun">
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input id="thuStart" type="time" step="900" > ~  <input id="thuEnd" type="time" step="900" >
+    
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">금</th>
+                                        <td id="friIsRun">
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input id="friStart" type="time" step="900" > ~  <input id="friEnd" type="time" step="900" >
+    
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">토</th>
+                                        <td id="satIsRun">
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input id="satStart" type="time" step="900" > ~  <input id="satEnd" type="time" step="900" >
+    
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">일</th>
+                                        <td id="sunIsRun">
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input id="sunStart" type="time" step="900" > ~  <input id="sunEnd" type="time" step="900" >
+    
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+    
+                                    </tbody>
+                                </table>
+                                <div class="mb-3 row">
+                                    <label for="extraSalonComment" class="col-2 "> 일정 안내</label>
+                                    <div class="col-10">
+                                      <input type="text" class="w-100" id="extraSalonComment">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h6>비정기 휴무일 설정</h6>
+                    <div class="d-flex">
+                        <!-- <div class="calendarContainer">
+                            <div class="calendar shadowingBox">
+                                <div class="month">
+                                  <img src="assets/src/icon/smallPrevIcon.png" class="prev">
+                                  <div class="date">
+                                    <h6></h6>
+                                  </div>
+                                  <img src="assets/src/icon/smallNextIcon.png" class="next">
+                                </div>
+                                <div class="weekdays pb-2 border-bottom">
+                                  <div>일</div>
+                                  <div>월</div>
+                                  <div>화</div>
+                                  <div>수</div>
+                                  <div>목</div>
+                                  <div>금</div>
+                                  <div>토</div>
+                                </div>
+                                <div class="days"></div>
+                            </div>
+                        </div> -->
+                        <div class="shadowingBox">
+                            <form>
+                                <fieldset >
+                                    <!-- <div class="row gap-2 mb-3">
+                                        <label for="name" class="text-nowrap">휴가명</label>
+                                        <div class="">
+                                          <input type="text" class="" id="inputEmail3" >
+                                        </div>
+                                    </div> -->
+                                   
+                                    <div class="row gap-2 mb-3">
+                                        <label for="number" class="text-nowrap">휴무 기간</label>
+                                        <div class="row gap-2">
+                                            <input type="date" class="w-75 mx-auto" id="restStart">
+                                            <div class="text-center">~</div>
+                                            <input type="date" class="w-75 mx-auto" id="restEnd">
+                                        </div>
+                                    </div>
+                                    <div class="row gap-2">
+                                        <div class="">상세 안내</div>
+                                        <div class="w-100">
+                                          <textarea row="3" class="w-100"></textarea>
+                                        </div>
+                                        
+                                    </div>
+                                    <button class="btn border btn-normal w-100 my-3">
+                                        추가하기
+                                    </button>
+
+                                      
+                                      
+                                      
+                                    
+                              </fieldset>
+                            </form>
+                            <h6>휴무 목록</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                               
+                              </ul> 
+                           
+                        </div>
+                        
+                    </div>
+                    
+                    
+
+                </div>
+              </div>
+
+          
+        </div>
+        
+    </main>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- Add the evo-calendar.js for.. obviously, functionality! -->
+<script src="assets/js/evo-calendar.js"></script>
+<script>
+    $("#calendar").evoCalendar();
+  </script>
+  
+<!-- <script>
+    const menuArr = document.querySelectorAll('#asideForm');
+    menuArr.forEach(function(element){
+        element.addEventListener('click', event => {
+            element.classList.add('activeButton');
+        });
+    })
+    $(document).ready(function () {
+       
+        console.log(menuArr);
+    })
+</script> -->
+
+</body>
+</html>

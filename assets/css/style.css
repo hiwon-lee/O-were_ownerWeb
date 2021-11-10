@@ -1,0 +1,319 @@
+@import url(colorZip.css);
+
+/* About login */
+.wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);   
+}
+.wrap-left #logo {
+    margin-bottom: 60px;
+}
+.wrap-left {
+    max-width: 464px;
+    margin-right: 250px;
+}
+.register a {
+    color: #BD39FF;
+}
+.wrap-right {
+    width: 586px;
+}
+.loginInput {
+    display:block;
+    Width: 100%;
+    box-shadow: 0 2px 6px 0 rgb(68 68 68 / 8%);
+    Border-radius: 6px;
+    Border: 1px solid #BDBDBD;
+    Padding: 1rem 1.5rem;
+    margin-bottom: 10px;
+}
+
+.password-hide {
+    text-align: right;
+    color: #939393;
+}
+.input-form {
+    margin-bottom: 40px;
+}
+.submit-form #btn-area {
+    display:block;
+    Width: 100%;
+    background: linear-gradient(to bottom right,#CC66FF,#00CCFF);
+    Border-radius: 30px;
+    Border: 0px solid;
+    Padding: 18px;
+    color: white;
+}
+.caption{
+    text-align: center;
+    margin: 10px;
+}
+.caption a {
+    color: #939393;
+}
+
+/* About join */
+#header {
+    display: flex;
+    margin: 30px 0 140px 0;
+}
+#header .order {
+    position: relative;
+    margin: 2px 300px;
+}
+.line {
+    width: 308px;
+    position: absolute;
+    margin: 1.5rem 0px;        
+}
+#full {
+    background: #BD39FF;
+    color: white;
+}
+#blank {
+    background: white;
+    border: 1px solid #939393; 
+    color:#939393;
+}
+.circle1 {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    border-radius: 50%; 
+    text-align: center;
+    display: inline-block;
+    position: absolute;    
+}
+.circle2 {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    border-radius: 50%; 
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 87px;    
+}
+.circle3 {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    border-radius: 50%; 
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 174px;
+}
+.circle4 {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    border-radius: 50%; 
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 261px;
+}
+#content h2 {
+    font-weight: bold;
+}
+.btn-document {
+    margin: 83px 0 30px 0;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-file-btn {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 408px;
+    height: 165px;
+    background-color: #F8F8F8;
+    Border-radius: 165px;
+    Border: #F8F8F8;
+    margin: 0 auto;   
+}
+
+.input-file-btn-active {
+    background: linear-gradient(to bottom right,#CC66FF,#00CCFF);
+    color: white; /* 도형이랑 글자 색이 안바뀜 */
+}
+
+#joinContent .caution {
+    color:#939393;
+    margin-bottom: 156px;
+}
+.btn-bottom {
+    justify-content: center;
+    display: flex;
+    margin: 5rem 0;
+}
+.btn-bottom .back{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 198px;
+    height: 61px;
+    Border-radius: 165px;
+    background-color: white;
+    border: 1px solid black;  
+    margin: 0 10px; 
+}
+.btn-bottom .next {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 198px;
+    height: 61px;
+    Border-radius: 165px;
+    background-color: white;
+    border: 1px solid black;  
+    margin: 0 10px; 
+}
+.btn-bottom .text {
+    font-size: 20px;
+}
+
+/* authentication */
+#authenticationContent {
+    display: flex;
+    height: 100%;
+    margin: 83px 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+.authenticationButton {
+    display: flex;
+    flex-direction: column;
+    margin : 20px 400px;
+}
+.authenticationButton button {
+    font-size: 28px;
+    border-color: black;
+    background-color: white;
+    padding: 20px 60px; 
+    margin: 10px;
+}
+#authenticationContent .caution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #939393;
+}
+
+/* authenticationComplete */
+#authenticationCompleteContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 71px 0px ;
+}
+#authenticationCompleteContent h2 {
+    font-size:40px;
+    font-weight: bold;
+}
+
+/* agree */
+ul>li{list-style: none}
+ul.join_box{border: 1px solid #ddd;background-color: #fff; margin: 60px 0; padding-left: 1.5rem;}
+.clearfix{display: block;clear: both; margin: 30px 0;}
+.checkBox,.checkBox>ul{position: relative;}
+.checkBox>ul>li{float: left;}
+.checkBox>ul>li:first-child{width: 85%;padding-bottom: 5px;font-weight: bold;}
+.checkBox>ul>li:nth-child(2){position: absolute;top: 50%;right: 30px;margin-top: -12px;}
+.checkBox textarea{width: 96%;height: 100px; margin: 0 ;background-color: #f7f7f7;color: #888; border: none;}
+
+/* enter */ 
+.enterForm {
+    display: block;
+    margin: 5rem auto;
+    width: 40rem;
+    font-size: 16px; 
+    
+}
+.enterRow {
+    margin: 1.8rem 0;
+}
+.enterRow .row3{
+    display: inline-block;
+    margin: 0.2rem;
+}
+.enterRow .row1{
+    margin: 0.2rem;
+    font-weight: bold;
+}
+.enterRow .form-label {
+    padding-left: 0;
+}
+.customButtons {
+    color: var(--mainBackgroundColor);
+    background-color: var(--firstMainColor);
+    padding: 0.6rem 0.75rem;;    
+}
+.btn:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+.form-control {
+    padding: 0.6rem 0.75rem;
+}
+
+/* card */ 
+.enterRow .row4 {
+    display: inline-block;
+    margin: 0.2rem;
+    width: 9.4rem;
+}
+.enterForm .form-select {
+    display: inline-block;
+    width: 31.9%;
+}
+
+/* accountCreate */
+.form-control-account {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(68 68 68 / 8%);
+}
+.gradientButtons {
+    background: var(--mainGradation);
+    color:var(--bs-white);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    margin: 3rem 0;
+    font-weight: bold;
+    font-size: var(--normalfont);
+}
+
+/* joinComplete */
+.contentAlign {
+    margin: 15rem auto 0 auto;
+    height: 30rem;
+    width: 40rem;
+}
+.joinComplete-b {
+    font-size: var(--hugefont);
+    font-weight: bold;
+    text-align: center;
+}
+.joinComplete-s {
+    margin: auto;
+    text-align: center;
+    font-size: var(--semismallfont);
+    margin: 4rem 0 5rem 0;
+}

@@ -1,0 +1,29 @@
+@import url(colorZip.css);
+
+.storageSearchContainer {
+    width:80%;
+    margin:1.5rem auto;
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+}
+/* .storageContainer .list-group {
+    flex-wrap: wrap;
+    
+}
+.storageContainer .list-group .list-group-item {
+    display: block;
+} */
+.storageTable {
+    font-size: var(--smallfont);
+}
+.pagenation {
+    font-size: var(--smallfont);
+}
+.page-link {
+    border : none;
+}
+input[type="number"] {
+    width: 46px;
+}

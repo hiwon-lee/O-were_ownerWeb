@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/reservationManage.css">
+
+
+
+<title>Document</title>
+</head>
+
+<body>
+<div class="bd-layout">
+    <!-- side menu bar -->
+    <aside class="bd-sidebar shadow">
+      <div class="logo">
+          <img src="assets/src/owereLogo.png" alt="o`were">
+      </div>
+      <div class="searchForm">
+          <div class="ps-2">
+                  <img src="assets/src/searchIcon.png">
+          </div>
+          <div>
+              <form class="searchBox">
+                  <input type="text" placeholder="검색">
+              </form>
+          </div>
+      </div>
+
+      <nav class="bd-links mb-auto">
+          <ul class="sidebarList list-unstyled ps-0">
+
+              <li class="">
+                <button class="btn btn-normal align-items-center rounded collapsed " data-bs-toggle="collapse" data-bs-target="#reservation-collapse" aria-expanded="false" onclick="location.href='reservationMonthly.html'" id="asideForm">
+                        예약
+                </button>
+              </li>
+              
+              <li>
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#stock-collapse" aria-expanded="false" onclick="location.href='storage.html'" id="asideForm">
+                  재고
+                </button>
+                <div class="collapse" id="stock-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="storage.html" class="link-dark rounded " id="asideForm">재고 현황</a></li>
+                    <li><a href="storage_tinyenroll.html" class="link-dark rounded " id="asideForm">개별 재고 등록</a></li>
+                    <li><a href="storage_hugeenroll.html" class="link-dark rounded " id="asideForm">대량 재고 등록</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <button class="btn btn-normal align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#chatting-collapse" aria-expanded="false" onclick="location.href='chatting.html'" id="asideForm">
+                  채팅
+                </button> 
+              </li>
+
+              <li>
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#salon-collapse" aria-expanded="false" onclick="location.href='profile.html'" id="asideForm">
+                  내 미용실
+                </button>
+                <div class="collapse" id="salon-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="profile.html" class="link-dark rounded" id="asideForm">MY</a></li>
+                    <li><a href="registrationTimeSeat.html" class="link-dark rounded" id="asideForm">시간 및 좌석 등록</a></li>
+                    <li><a href="reView.html" class="link-dark rounded " id="asideForm">리뷰 관리</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#recruitment-collapse" aria-expanded="true" onclick="location.href='designer.html'" id="asideForm">
+                    디자이너 관리
+                  </button>
+                  <div class="" id="recruitment-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="designer.html" class="link-dark rounded " id="asideForm">디자이너 목록 관리</a></li>
+                      <li><a href="reservationManage.html" class="link-dark rounded activeButton" id="asideForm">예약 관리</a></li>
+                      
+                    </ul>
+                  </div>
+              </li>
+
+              <li>
+                  <button class="btn btn-normal align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#calculate-collapse" aria-expanded="false" onclick="location.href='calculate.html'" id="asideForm">
+                      정산
+                  </button>
+              </li>
+
+          </ul>  
+      </nav>
+      <div class="bottomNav">
+          <ul class="list-unstyled border-top py-2 mb-0">
+              <li class="my-2">
+                  <a href="setting.html">설정</a>
+              </li>
+              <li class="my-1">
+                  <a href="#">도움말</a>
+               </li>
+          </ul>
+      </div>
+      <div class="bottomNav border-top pt-2 my-2">로그아웃</div>
+  </aside> 
+        
+    <main class="bd-main">
+        <div class="bd-navTop">
+            <div class="st-actionContainer right-bottom">
+                <div class="st-btn-container right-bottom">
+                    <div class="st-button-main">
+                        <img src="assets/src/icon/notificationIcon.png">
+                    </div>
+                </div>
+                <div class="st-panel">
+                    <div class="st-panel-header">
+                        <div>알림</div>
+                        <div>
+                            <input type="checkbox">모두읽음</span>
+                        </div>
+                    </div>
+                    <div class="st-panel-contents">
+                        <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+          <div class="bd-mainContent ">
+            <div class="d-flex">
+              <h5>예약 관리</h5>
+                
+              <ul class="d-grid gap-2 d-md-flex justify-content-md-end ms-auto nav nav-pills " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link btn btn-sm active" id="approve" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">시술예정</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link btn btn-sm" id="reject" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">시술완료</button>
+                </li>
+              
+              </ul>
+            </div>
+                
+                  
+               
+                <div name="_correction_" class="ms-auto">
+
+                  
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="approve">
+                      <div class="storageSearchContainer">
+
+                        <form class="col-8 border border-0 " style="position: relative" >
+                          <input type="search" class="form-control text-secondary"  name="search" placeholder="검색">
+                        </form>
+                        <div class="col-2">
+                            <select class="form-select d-inline-block" aria-label="Default select example">
+                                <option value="whole" selected >전체</option>
+                                <option value="product">제품별</option>
+                                <option value="category">카테고리</option>
+                              </select>
+                        </div>
+                        <button type="submit" class="col-2 btn btn-main">search</button>
+                    </div>
+        
+                    <div class="shadowingBox">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th scope="col" id="category">디자이너 이름</th>
+                              <th scope="col" id="productName">고객님 이름</th>
+                              <th scope="col" id="uploadDate">예약 일정</th>
+                              <th scope="col" id="price">예약 좌석</th>
+                              <th class="col" id="availableStock">시술 분류</th>
+                              <th class="col" id="availableStock">정산 예정 금액</th>
+                              <th class="col" id="availableStock">선택</th>
+                            </tr>
+                          </thead>
+                          <tbody class="storageTable">
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject" data-bs-toggle="modal" data-bs-target="#exampleModal">거절</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject">거절</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject">거절</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject">거절</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject">거절</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject">거절</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject">거절</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                                <button class="btn btn-gray btn-sm" id="reject">거절</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>  
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="headertitle" id="exampleModalLabel">예약 거절 사유 입력</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              
+                              <div class="modal-body">
+                                <table class="table">
+                                  <tbody>
+                                    <tr>
+                                      <td>분류</td>
+                                      <td><div class="ms-5 flex-grow-1">
+                                        <select class="form-select d-inline-block" aria-label="Default select example">
+                                            <option value="whole" selected >전체</option>
+                                            <option value="product">제품별</option>
+                                            <option value="category">카테고리</option>
+                                          </select>
+                                      </div></td>
+                                    </tr>
+                                    <tr>
+                                      <td>요청메세지</td>
+                                      <td><div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Comments</label>
+                                      </div></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-lightgray btn-sm" id="reject" data-bs-dismiss="modal">닫기</button>
+                                <button type="button" class="btn btn-gray btn-sm" id="reject">거절 메세지 보내기</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                    </div>
+        
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav> 
+                  </div>    
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="reject">
+                      <div class="storageSearchContainer">
+
+                        <form class="col-8 border border-0 " style="position: relative" >
+                          <input type="search" class="form-control text-secondary"  name="search" placeholder="검색">
+                        </form>
+                        <div class="col-2">
+                            <select class="form-select d-inline-block" aria-label="Default select example">
+                                <option value="whole" selected >전체</option>
+                                <option value="product">제품별</option>
+                                <option value="category">카테고리</option>
+                              </select>
+                        </div>
+                        <button type="submit" class="col-2 btn btn-main">search</button>
+                    </div>
+        
+                    <div class="shadowingBox">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th scope="col" id="category">디자이너 이름</th>
+                              <th scope="col" id="productName">고객님 이름</th>
+                              <th scope="col" id="uploadDate">예약 일정</th>
+                              <th scope="col" id="price">예약 좌석</th>
+                              <th class="col" id="availableStock">시술 분류</th>
+                              <th class="col" id="availableStock">정산 금액</th>
+                              <th class="col" id="availableStock">정산 여부</th>
+                              <th class="col" id="availableStock">선택</th>
+                            </tr>
+                          </thead>
+                          <tbody class="storageTable">
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>이희원</td>
+                              <td>조하연</td>
+                              <td>2021/09/02/08:00</td>
+                              <td>3A</td>
+                              <td>
+                                <span class="cut">커트</span>
+                                <span class="perm">펌</span>
+                              </td>
+                              <td>120,000원</td>
+                              <td>O</td>
+                              <td>
+                                <button class="btn btn-second btn-sm" id="portfolioBtn">디자이너 채팅</button>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>  
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="headertitle" id="exampleModalLabel">예약 거절 사유 입력</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              
+                              <div class="modal-body">
+                                <table class="table">
+                                  <tbody>
+                                    <tr>
+                                      <td>분류</td>
+                                      <td><div class="ms-5 flex-grow-1">
+                                        <select class="form-select d-inline-block" aria-label="Default select example">
+                                            <option value="whole" selected >전체</option>
+                                            <option value="product">제품별</option>
+                                            <option value="category">카테고리</option>
+                                          </select>
+                                      </div></td>
+                                    </tr>
+                                    <tr>
+                                      <td>요청메세지</td>
+                                      <td><div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Comments</label>
+                                      </div></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-lightgray btn-sm" id="reject" data-bs-dismiss="modal">닫기</button>
+                                <button type="button" class="btn btn-gray btn-sm" id="reject">거절 메세지 보내기</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                    </div>
+        
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </div>
+                  </div>
+                      
+                </div>
+                
+            </div>
+           
+            
+            
+          </div>
+    </main>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="assets/js/main.js"></script>
+  
+<!-- <script>
+    const menuArr = document.querySelectorAll('#asideForm');
+    menuArr.forEach(function(element){
+        element.addEventListener('click', event => {
+            element.classList.add('activeButton');
+        });
+    })
+    $(document).ready(function () {
+       
+        console.log(menuArr);
+    })
+</script> -->
+
+</body>
+</html>

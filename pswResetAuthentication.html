@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>pswResetAuthentication</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id = "header2">
+                <div class="logo">
+                    <img src="assets/src/O'were 로고.svg" style="width: 190px;">
+                </div>
+                <div class="idpwSearch">
+                    <span><a href="login.html">로그인</a></span>
+                    <span>|</span>  
+                    <span><a href="join.html">회원가입</a></span>
+                </div>
+            </div>
+            <h2 class="headline">비밀번호 재설정</h2>
+            <div class="navWrap">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-id-tab" data-bs-toggle="tab" data-bs-target="#nav-id" type="button" role="tab" aria-controls="nav-id" aria-selected="true">휴대전화로 인증</button>
+                    <button class="nav-link" id="nav-email-tab" data-bs-toggle="tab" data-bs-target="#nav-email" type="button" role="tab" aria-controls="nav-email" aria-selected="false">이메일로 인증</button>
+                    </div>
+                </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-id" role="tabpanel" aria-labelledby="nav-id-tab">
+                            <div class="loginForm">
+                                <form>
+                                    <div class="enterRow">
+                                        <div class="row3">
+                                            <label for="phoneNumber" class="form-label">휴대전화</label>
+                                            <input type="number" class="form-control " name="phoneNumber" id="phoneNumber" placeholder="전화번호 입력" required>
+                                        </div>
+                                        <div class="row3 phoneNumber-btn">
+                                            <button type="button" class="btn customButtons">인증번호 받기</button>
+                                        </div>
+                                        <div class="row1">
+                                            <input type="text" class="form-control " name="phoneNumber" id="phoneNumber" placeholder="인증번호를 입력하세요." required>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="d-grid gap-2">
+                                    <button class="btn mainButtons confirm" type="submit" onclick="location.href='newPassword.html'">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-email" role="tabpanel" aria-labelledby="nav-email-tab">
+                            <div class="loginForm">
+                                <form>
+                                    <div class="enterRow">
+                                        <div class="row1">
+                                            <label for="representName" class="form-label">이메일</label>
+                                            <input type="text" class="form-control " id="representName" placeholder="이메일 주소를 입력하세요.">
+                                        </div>   
+                                    </div>
+                                </form>
+                                <div class="d-grid gap-2">
+                                    <button class="btn mainButtons confirm" type="submit" onclick="location.href='sendEmailComplete.html'">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <script src="assets/bootstrap-5.0.2/js/bootstrap.js"></script>
+        <script src="assets/js/javascript.js"></script>
+    </body>
+    </html>

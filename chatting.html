@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/chatting.css">
+
+
+<title>Document</title>
+</head>
+
+<body>
+<div class="bd-layout">
+    <!-- side menu bar -->
+    <aside class="bd-sidebar shadow">
+        <div class="logo">
+            <img src="assets/src/owereLogo.png" alt="o`were">
+        </div>
+        <div class="searchForm">
+            <div class="ps-2">
+                    <img src="assets/src/searchIcon.png">
+            </div>
+            <div>
+                <form class="searchBox">
+                    <input type="text" placeholder="검색">
+                </form>
+            </div>
+        </div>
+
+        <nav class="bd-links mb-auto">
+            <ul class="sidebarList list-unstyled ps-0">
+
+                <li class="">
+                  <button class="btn btn-normal align-items-center rounded collapsed " data-bs-toggle="collapse" data-bs-target="#reservation-collapse" aria-expanded="false" onclick="location.href='reservationMonthly.html'" id="asideForm">
+                          예약
+                  </button>
+                </li>
+                
+                <li>
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#stock-collapse" aria-expanded="false" onclick="location.href='storage.html'" id="asideForm">
+                    재고
+                  </button>
+                  <div class="collapse" id="stock-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="storage.html" class="link-dark rounded " id="asideForm">재고 현황</a></li>
+                      <li><a href="storage_tinyenroll.html" class="link-dark rounded " id="asideForm">개별 재고 등록</a></li>
+                      <li><a href="storage_hugeenroll.html" class="link-dark rounded " id="asideForm">대량 재고 등록</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="activeButton">
+                  <button class="btn btn-normal align-items-center rounded collapsed " data-bs-toggle="collapse" data-bs-target="#chatting-collapse" aria-expanded="true" onclick="location.href='chatting.html'" id="asideForm">
+                    채팅
+                  </button> 
+                </li>
+
+                <li>
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#salon-collapse" aria-expanded="false" onclick="location.href='profile.html'" id="asideForm">
+                    내 미용실
+                  </button>
+                  <div class="collapse" id="salon-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="profile.html" class="link-dark rounded " id="asideForm">MY</a></li>
+                      <li><a href="registrationTimeSeat.html" class="link-dark rounded" id="asideForm">시간 및 좌석 등록</a></li>
+                      <li><a href="reView.html" class="link-dark rounded " id="asideForm">리뷰 관리</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#recruitment-collapse" aria-expanded="false" onclick="location.href='designer.html'" id="asideForm">
+                      디자이너 관리
+                    </button>
+                    <div class="collapse" id="recruitment-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="designer.html" class="link-dark rounded" id="asideForm">디자이너 목록 관리</a></li>
+                        <li><a href="reservationManage.html" class="link-dark rounded" id="asideForm">예약 관리</a></li>
+                        
+                      </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="btn btn-normal align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#calculate-collapse" aria-expanded="false" onclick="location.href='calculate.html'" id="asideForm">
+                        정산
+                    </button>
+                </li>
+
+            </ul>  
+        </nav>
+        <div class="bottomNav">
+            <ul class="list-unstyled border-top py-2 mb-0">
+                <li class="my-2">
+                    <a href="setting.html">설정</a>
+                </li>
+                <li class="my-1">
+                    <a href="#">도움말</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="bottomNav border-top pt-2 my-2">로그아웃</div>
+    </aside> 
+        
+    <main class="bd-main">
+        <div class="bd-navTop">
+            <div class="st-actionContainer right-bottom">
+                <div class="st-btn-container right-bottom">
+                    <div class="st-button-main">
+                        <img src="assets/src/icon/notificationIcon.png">
+                    </div>
+                </div>
+                <div class="st-panel">
+                    <div class="st-panel-header">
+                        <div>알림</div>
+                        <div>
+                            <input type="checkbox">모두읽음</span>
+                        </div>
+                    </div>
+                    <div class="st-panel-contents">
+                        <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <button class="btn">menu list</button> -->
+        </div>
+        <div class="bd-mainContent">
+            <div class="d-flex gx-1">
+                <div class="flex-fill">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">디자이너 목록</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link btn position-relative" id="list-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">채팅방
+                        <!-- if have new message, insert bottom span -->
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger " id="calcmsgPocket">
+                          <span id="calcmsg"></span>
+                         
+                          
+                        </span>
+                      </button>
+                    </li>
+                    
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="profile-tab">
+
+                      <div class="searchForm" >
+                          <div class="ps-2">
+                                  <img src="assets/src/searchIcon.png">
+                          </div>
+                          <div>
+                              <form class="searchBox">
+                                  <input type="text" placeholder="채팅방 또는 이름 검색">
+                                </form>
+                          </div>
+                      </div>
+
+                      <ul class="list-group list-group-flush chattingList border overflow-auto">
+                        
+                        <li class="list-group-item  list-group-item-action">
+                          <div class="d-flex align-items-center">
+                            <div class="flex-shrink-1 profileImgCon" >
+                              <img src="assets/src/sampleImg.png">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              디자이너 이희원
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item  list-group-item-action">
+                          <div class="d-flex align-items-center">
+                            <div class="flex-shrink-1 profileImgCon" >
+                              <img src="assets/src/sampleImg.png">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              디자이너 이희원
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item  list-group-item-action">
+                          <div class="d-flex align-items-center">
+                            <div class="flex-shrink-1 profileImgCon" >
+                              <img src="assets/src/sampleImg.png">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              디자이너 이희원
+                            </div>
+                          </div>
+                        </li>
+                       
+                        
+                        
+                       </ul>
+                
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="list-tab">
+                      <div class="searchForm" >
+                          <div class="ps-2">
+                                  <img src="assets/src/searchIcon.png">
+                          </div>
+                          <div>
+                              <form class="searchBox">
+                                  <input type="text" placeholder="채팅방 또는 이름 검색">
+                                </form>
+                          </div>
+                      </div>
+                      <ul class="list-group list-group-flush chattingList border overflow-auto">
+                        
+                        <li class="list-group-item list-group-item-action">                    
+                              <div class="d-flex align-items-center my-1">
+                                <div class="flex-shrink-1 profileImgCon" >
+                                  <img src="assets/src/sampleImg.png">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                  <div class="pb-3 mb-0 small lh-sm w-100">
+                                    <div class="d-flex justify-content-between mb-2">
+                                      <strong class="text-gray-dark">디자이너 이희원</strong>
+                                      <span>오후 09:16</span>
+                                    </div>
+                                    <div class="d-flex">
+                                      <span>안녕하세요</span>
+                                      
+                                      <span id="readYet" class="badge bg-danger ms-auto">20</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item list-group-item-action">
+
+                            <div class="d-flex align-items-center my-1">
+                              <div class="flex-shrink-1 profileImgCon" >
+                                <img src="assets/src/sampleImg.png">
+                              </div>
+                              <div class="flex-grow-1 ms-3">
+                                <div class="pb-3 mb-0 small lh-sm w-100">
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <strong class="text-gray-dark">디자이너 이희원</strong>
+                                    <span>오후 09:16</span>
+                                  </div>
+                                  <div class="d-flex">
+                                    <span>안녕하세요</span>
+                                    
+                                    <span id="readYet" class="badge bg-danger ms-auto">5</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center my-1">
+                              <div class="flex-shrink-1 profileImgCon" >
+                                <img src="assets/src/sampleImg.png">
+                              </div>
+                              <div class="flex-grow-1 ms-3">
+                                <div class="pb-3 mb-0 small lh-sm w-100">
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <strong class="text-gray-dark">디자이너 이희원</strong>
+                                    <span>오후 09:16</span>
+                                  </div>
+                                  <div class="d-flex">
+                                    <span>안녕하세요</span>
+                                    
+                                    <span id="readYet" class="badge bg-danger ms-auto">20</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        
+                    </ul>
+                    </div>
+                    
+                  </div>
+                   
+                  
+                        
+                        <li class="list-group-item">
+                            <div class="d-flex text-muted pt-3">
+
+                                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+                                </svg>
+                          
+                                <div class="pb-3 mb-0 small lh-sm w-100">
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <strong class="text-gray-dark">디자이너 이희원</strong>
+                                    <span>오후 09:16</span>
+                                  </div>
+                                  <span class="d-block">안녕하세요</span>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex text-muted pt-3">
+
+                                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+                                </svg>
+                          
+                                <div class="pb-3 mb-0 small lh-sm w-100">
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <strong class="text-gray-dark">디자이너 이희원</strong>
+                                    <span>오후 09:16</span>
+                                  </div>
+                                  <span class="d-block">안녕하세요</span>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex text-muted pt-3">
+
+                                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+                                </svg>
+                          
+                                <div class="pb-3 mb-0 small lh-sm w-100">
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <strong class="text-gray-dark">디자이너 이희원</strong>
+                                    <span>오후 09:16</span>
+                                  </div>
+                                  <span class="d-block">안녕하세요</span>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex text-muted pt-3">
+
+                                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+                                </svg>
+                          
+                                <div class="pb-3 mb-0 small lh-sm w-100">
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <strong class="text-gray-dark">디자이너 이희원</strong>
+                                    <span>오후 09:16</span>
+                                  </div>
+                                  <span class="d-block">안녕하세요</span>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex text-muted pt-3">
+
+                                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+                                </svg>
+                          
+                                <div class="pb-3 mb-0 small lh-sm w-100">
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <strong class="text-gray-dark">디자이너 이희원</strong>
+                                    <span>오후 09:16</span>
+                                  </div>
+                                  <span class="d-block">안녕하세요</span>
+                                </div>
+                              </div>
+                        </li>
+                        
+                        
+                    </ul> 
+                
+                  </div> <!--chatting list-->
+                <div class="flex-fill">
+                  <div class="chat_wrap">
+                    <div class="header">
+                      <img src="assets/src/icon/prevArrowIcon.png">
+                      <span id="receiver">이희원</span>
+
+                     
+
+                    </div>
+                    <div class="chat">
+                        <ul>
+                            <!-- 동적 생성 -->
+                        </ul>
+                    </div>
+                    <div class="input-div">
+                        <textarea placeholder="Press Enter for send message."></textarea>
+                    </div>
+                 
+                    <!-- format -->
+                 
+                    <div class="chat format">
+                        <ul>
+                            <li>
+                                <div class="sender">
+                                    <span></span>
+                                </div>
+                                <div class="message">
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                
+                      
+                  
+                </div>
+                
+            
+
+ 
+
+                </div>
+                <div class="dropdown">
+                  <button class="btn smallmenu shadowingBox" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                   <img src="assets/src/icon/listIcon.png" style="height: 1rem; width: 1rem;">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">r</a></li>
+                    <li><a class="dropdown-item" href="#">s</a></li>
+                    <li><a class="dropdown-item" href="#">e</a></li>
+                  </ul>
+                </div>
+            </div>
+
+          
+                
+        </div>
+        
+        
+    </main>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="assets/bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/chatting.js"></script>
+  
+<!-- <script>
+    const menuArr = document.querySelectorAll('#asideForm');
+    menuArr.forEach(function(element){
+        element.addEventListener('click', event => {
+            element.classList.add('activeButton');
+        });
+    })
+    $(document).ready(function () {
+       
+        console.log(menuArr);
+    })
+</script> -->
+
+</body>
+</html>

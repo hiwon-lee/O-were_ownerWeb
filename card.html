@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>card</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id = "header">
+                <div class="logo">
+                    <img src="assets/src/O'were 로고.svg" style="width: 190px;">
+                </div>
+                <div class="order">
+                    <hr class="line">
+                    <span class="circle1" id="blank">1</span> 
+                    <span class="circle2" id="blank">2</span> 
+                    <span class="circle3" id="full">3</span> 
+                    <span class="circle4" id="blank">4</span>
+                </div>
+            </div>
+            <h2 class=cccsa style="font-weight: bold; text-align: center;" >카드 등록</h2>
+            <div class="enterForm">
+                <form>
+                    <div class="enterRow">
+                        <div class="row4">
+                            <label for="cardNumber" class="form-label">카드번호</label>
+                            <input type="number" class="form-control " id="cardNumber">
+                        </div>
+                        <div class="row4">
+                            <input type="number" class="form-control " id="cardNumber" >
+                        </div>
+                        <div class="row4">
+                            <input type="number" class="form-control " id="cardNumber" >
+                        </div>
+                        <div class="row4">
+                            <input type="number" class="form-control " id="cardNumber" >
+                        </div>
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="expirationDate" class="form-label">유효기간</label>
+                            <input type="number" class="form-control " name="expirationDate" id="expirationDate" placeholder="월(MM) / 년(YY)">
+                        </div>
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="cvcNumber" class="form-label">CVC</label>
+                            <input type="number" class="form-control " name="cvcNumber" id="cvcNumber" placeholder="카드뒷면 3자리">
+                        </div>
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="password" class="form-label">비밀번호</label>
+                            <input type="password" class="form-control " name="password" id="password" placeholder="비밀번호 앞 두자리">
+                        </div>
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="birth" class="form-label">생년월일</label>
+                    </div>
+                    <select name="yy" class="form-control form-select row3" id="year"></select>
+                    <select name="mm" class="form-control form-select row3" id="month"></select>
+                    <select name="dd" class="form-control form-select row3" id="day"></select>
+                </form>
+            </div>
+            <div class="btn-bottom">
+                <button class="back"  onclick="location.href='enter.html'">
+                    <i class ="material-icons md-18">arrow_back_ios</i>
+                    <span class="text">이전</span>
+                </button> 
+                <button class="next" onclick="location.href='accountCreate.html'">
+                    <span class="text">다음</span>
+                    <i class ="material-icons md-18">arrow_forward_ios</i>
+                </button>
+            </div>
+        </div>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+        <script src="assets/js/javascript.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    </body>
+    </html>

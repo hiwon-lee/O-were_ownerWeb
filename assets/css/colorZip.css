@@ -1,0 +1,72 @@
+:root {
+  --mainBackgroundColor: #FFFFFF;
+  --mainBackVer02: #FAFBFC;
+  --sideHoverFocus: #FBF2FF;
+  --firstMainColor: #A512EF;
+  --firstMainColorUp: #9B0DE2;
+  --firstMainColorlight: #FBF2FF;
+  --secondMainColor: #00CCFF;
+  --secondMainColorlight: #F3FDFF;
+  --separatedColor: #e7e7e7;
+  --gray70: #71717A;
+  --gray30: #bdbdbd;
+  --bordergray: #DEE1E4;
+  --mainGradation: linear-gradient(to bottom right,#CC66FF,#00CCFF);   
+}
+
+:root{
+    --tinyfont : 0.5rem;
+    --smallfont : 0.75rem;
+    --semismallfont : 0.85rem;
+    --normalfont : 0.875rem;
+    --hugefont : 1.5rem; 
+}
+/*=====CUSTOM BUTTON=====*/
+.normalBtn {
+    border-radius: 10px;
+    border: 1px solid var(--lightgray);
+    background-color: var(--separatedColor);
+    font-size: var(--semismallfont);
+}
+.normalBtn:hover {
+    background-color: var(--lightgray);
+}
+.activeButton {
+  background-color: rgb(255, 220, 255);
+  border-radius: 0.25rem
+ !important;
+}
+
+.btn-main /*보라색 버튼*/ {
+    color: #fff;
+    background-color: var(--firstMainColor);
+    border-color: var(--firstMainColorUp);
+  }
+  .btn-main-outline {
+    color: black;
+    border:1px solid var(--firstMainColor);
+  }
+  
+  .btn-second /*하늘색 버튼*/ {
+    color: #000;
+    background-color: var(--secondMainColorlight);
+    border-color: var(--secondMainColor);
+  }
+  
+  .btn-gray /*흰색 배경+회색 선 버튼*/ {
+    color: var(--gray70);
+    background-color: var(--mainBackgroundColor);
+    border-color: var(--gray70);
+  }
+  .btn-gray-full /*진회색 버튼*/{
+    color: var(--mainBackgroundColor);
+    background-color: var(--gray70);
+    border-color: var(--gray70);
+  }
+  .btn-lightgray /*연회색 버튼*/{
+    color: var(--gray70);
+    background-color: var(--bordergray);
+    border-color: var(--bordergray);
+  }
+
+

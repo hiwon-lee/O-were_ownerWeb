@@ -1,0 +1,97 @@
+/* chatting grid */
+.bd-mainContent{
+  overflow:hidden;
+}
+
+/* chatting list + workspace */
+.allUsersList{
+    width: 300px;
+    margin: 20px;
+  }
+  .allUsersList .card-header{
+    background: #c5c5c5;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+  .allUsersList .image img{
+    border-radius: 16px;
+  }
+  .usersChatList{
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    margin-bottom: 0;
+    right: 360px;
+  }
+  .designerProfile {
+    width:4rem;
+    height: 4rem;
+    border-radius: 50px;
+}
+  .show{
+    display: block;
+  }
+  .thumb-user-list{
+    display: none;
+  }
+  .thumb-user-list .image img{
+    border-radius: 30px;
+  }
+  .usersChatList .card-header{
+    background: #c0e8ff;
+    font-size: 13px;
+  }
+  .chattingList {
+      overflow: auto;
+      height: calc(100vh - 12rem);
+  }
+  .chat-content{
+    overflow: auto;
+    height: calc(100vh - 14.5rem);
+  }
+  *{ margin: 0; padding: 0; }
+  .chat_wrap {
+    margin:0 1rem;
+  }
+  .chat_wrap .header { font-size: 14px; padding: 1rem; background: #ffffff; color: rgb(0, 0, 0);    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+   
+  .chat_wrap .chat { height: calc(100vh - 14rem); overflow: auto; border: 0.5px solid rgb(231, 231, 231);}
+  .chat_wrap .chat ul { width: 100%; list-style: none; }
+  .chat_wrap .chat ul li { width: 100%; }
+  .chat_wrap .chat ul li.left { text-align: left; }
+  .chat_wrap .chat ul li.right { text-align: right; }
+   
+  .chat_wrap .chat ul li > div { font-size: 13px;  }
+  .chat_wrap .chat ul li > div.sender { margin: 10px 20px 0 20px; font-weight: bold; }
+  .chat_wrap .chat ul li > div.message { display: inline-block; word-break:break-all; margin: 5px 20px; max-width: 75%; border: 1px solid #00CCFF; padding: 10px; border-radius: 5px; background-color: #EBFBFF; color: #555; text-align: left; }
+   
+  .chat_wrap .input-div { bottom: 0; width: 100%; background-color: #FFF; text-align: center; border-top: 1px solid var(--firstMainColor); }
+  .chat_wrap .input-div > textarea { width: 100%; height: 5rem; border: none; padding: 10px; outline: none;}
+   
+  .format { display: none; }
+  .dropdown-menu {
+    min-width:0;
+  }
+  .smallmenu.shadowingBox {
+    padding:0.2rem 0.8rem 0.4rem;
+    margin:0;
+  }
+  .profileImgCon img{
+    width:4em;
+    height: 4em;
+    border-radius: 50px;
+    object-fit: cover;
+  }
+
+  /* chatting-tab design */
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--gray70);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-link:hover, .nav-link:focus {
+  color: var(--gray70);
+}

@@ -1,0 +1,83 @@
+
+@import url(colorZip.css);
+
+.editIntro {
+    --part1Size : calc((100vmax - 244px) * 0.725)px;
+    --part2Size : calc((100vmax - 244px) * 0.475)px; 
+    display: grid;
+    gap:1.5rem;
+    grid-template-areas: "part1 part2";
+    grid-template-columns: 2.5fr 1.5fr;
+}
+.introPart1 {
+    grid-area: part1;
+}
+.introPart2 {
+    grid-area: part2;
+}
+.introPart1 > *,
+.introPart2 > * {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: var(--mainBackgroundColor);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem     ;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+
+}
+.btn-file {
+    display: block;
+    height: 245px;
+    border: 1px dashed #ddd;
+    background: #998b8b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.listCategory {
+    font-size: var(--tinyfont);
+    color:var(--bs-gray);
+    margin:0.3rem 0.8rem 0 0;
+}
+.priceList li {
+    display: flex;
+    font-size: var(--semismallfont);
+}
+.priceImg {
+    width:100%;
+    height: 8rem;
+}
+
+.addinnerImg {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:0.6rem;
+    text-align: center;
+    width: 8rem;
+    height: 8rem;
+}
+.priceTagImgGroup div img, #logo {
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.priceTagImgGroup div  {
+    margin:0.6rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+#logo {
+    /* margin:0.6rem; */
+    width: 100%;
+    height: 8rem;
+}
+form {
+    padding:0 !important;
+}

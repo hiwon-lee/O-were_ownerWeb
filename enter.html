@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>enter</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id = "header">
+                <div class="logo">
+                    <img src="assets/src/O'were 로고.svg" style="width: 190px;">
+                </div>
+                <div class="order">
+                    <hr class="line">
+                    <span class="circle1" id="blank">1</span> 
+                    <span class="circle2" id="blank">2</span> 
+                    <span class="circle3" id="full">3</span> 
+                    <span class="circle4" id="blank">4</span>
+                </div>
+            </div>
+            <h2 class=cccsa style="font-weight: bold; text-align: center;" >미용실 정보 입력</h2>
+            <div class="enterForm">
+                <form>
+                    <div class="enterRow">
+                        <div class="row3">
+                            <label for="enrollInput" class="form-label">사업자등록번호*</label>
+                            <input type="number" class="form-control " id="enrollInput" >
+                        </div>
+                        <div class="row3">
+                            <input type="number" class="form-control " id="enrollInput" >
+                        </div>
+                        <div class="row3">
+                            <input type="number" class="form-control " id="enrollInput" >
+                        </div>
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="shopName" class="form-label">업체명(법인명)*</label>
+                            <input type="text" class="form-control " id="shopName" >
+                        </div>   
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="representName" class="form-label">대표자명*</label>
+                            <input type="text" class="form-control " id="representName" >
+                        </div>   
+                    </div>
+                    <div class="enterRow">
+                        <div class="row3">
+                            <label for="postcode" class="form-label">사업지주소*</label>
+                            <input type="text" class="form-control " name="postcode" id="postcode" placeholder="우편번호">
+                        </div>
+                        <div class="row3 postcode-btn">
+                            <button type="button" class="btn customButtons" onclick="execDaumPostcode()">우편번호 찾기</button>
+                        </div>
+                        <div class="row1">
+                            <input type="text" class="form-control " name="address" id="address" placeholder="도로명 주소">
+                        </div>   
+                        <div class="row1">
+                            <input type="text" class="form-control " name="address" id="address" placeholder="상세 주소">
+                        </div>   
+                    </div>
+                    <div class="enterRow">
+                        <div class="row3">
+                            <label for="phoneNumber" class="form-label">휴대전화*</label>
+                            <input type="number" class="form-control " name="phoneNumber" id="phoneNumber" placeholder="전화번호 입력">
+                        </div>
+                        <div class="row3 phoneNumber-btn">
+                            <button type="button" class="btn customButtons">인증번호 받기</button>
+                        </div>
+                        <div class="row1">
+                            <input type="text" class="form-control " name="phoneNumber" id="phoneNumber" placeholder="인증번호를 입력하세요.">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btn-bottom">
+                <button class="back"  onclick="location.href='agree.html'">
+                    <i class ="material-icons md-18">arrow_back_ios</i>
+                    <span class="text">이전</span>
+                </button> 
+                <button class="next" onclick="location.href='card.html'">
+                    <span class="text">다음</span>
+                    <i class ="material-icons md-18">arrow_forward_ios</span>
+                </button>
+            </div>
+        </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js?autoload=false"></script>    
+    </body>
+    </html>

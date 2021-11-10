@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/reservationListStyle.css">
+
+
+
+<title>Document</title>
+</head>
+
+<body>
+<div class="bd-layout">
+    <!-- side menu bar -->
+    <aside class="bd-sidebar shadow">
+        <div class="logo">
+            <img src="assets/src/owereLogo.png" alt="o`were">
+        </div>
+        <div class="searchForm">
+            <div class="ps-2">
+                    <img src="assets/src/searchIcon.png">
+            </div>
+            <div>
+                <form class="searchBox">
+                    <input type="text" placeholder="검색">
+                </form>
+            </div>
+        </div>
+
+        <nav class="bd-links mb-auto">
+            <ul class="sidebarList list-unstyled ps-0">
+
+                <li class="activeButton">
+                  <button class="btn btn-normal align-items-center rounded collapsed " data-bs-toggle="collapse" data-bs-target="#reservation-collapse" aria-expanded="true" onclick="location.href='reservationMonthly.html'" id="asideForm">
+                          예약
+                  </button>
+                </li>
+                
+                <li>
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#stock-collapse" aria-expanded="false" onclick="location.href='storage.html'" id="asideForm">
+                    재고
+                  </button>
+                  <div class="collapse" id="stock-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="storage.html" class="link-dark rounded " id="asideForm">재고 현황</a></li>
+                      <li><a href="storage_tinyenroll.html" class="link-dark rounded " id="asideForm">개별 재고 등록</a></li>
+                      <li><a href="storage_hugeenroll.html" class="link-dark rounded " id="asideForm">대량 재고 등록</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <button class="btn btn-normal align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#chatting-collapse" aria-expanded="false" onclick="location.href='chatting.html'" id="asideForm">
+                    채팅
+                  </button> 
+                </li>
+
+                <li>
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#salon-collapse" aria-expanded="false" onclick="location.href='profile.html'" id="asideForm">
+                    내 미용실
+                  </button>
+                  <div class="collapse" id="salon-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="profile.html" class="link-dark rounded" id="asideForm">MY</a></li>
+                      <li><a href="registrationTimeSeat.html" class="link-dark rounded" id="asideForm">시간 및 좌석 등록</a></li>
+                      <li><a href="reView.html" class="link-dark rounded " id="asideForm">리뷰 관리</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#recruitment-collapse" aria-expanded="false" onclick="location.href='designer.html'" id="asideForm">
+                      디자이너 관리
+                    </button>
+                    <div class="collapse" id="recruitment-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="designer.html" class="link-dark rounded" id="asideForm">디자이너 목록 관리</a></li>
+                        <li><a href="reservationManage.html" class="link-dark rounded" id="asideForm">예약 관리</a></li>
+                        
+                      </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="btn btn-normal align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#calculate-collapse" aria-expanded="false" onclick="location.href='calculate.html'" id="asideForm">
+                        정산
+                    </button>
+                </li>
+
+            </ul>  
+        </nav>
+        <div class="bottomNav">
+            <ul class="list-unstyled border-top py-2 mb-0">
+                <li class="my-2">
+                    <a href="setting.html">설정</a>
+                </li>
+                <li class="my-1">
+                    <a href="#">도움말</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="bottomNav border-top pt-2 my-2">로그아웃</div>
+    </aside> 
+        
+    <main class="bd-main">
+        <div class="bd-navTop">
+            <div class="st-actionContainer right-bottom">
+                <div class="st-btn-container right-bottom">
+                    <div class="st-button-main">
+                        <img src="assets/src/icon/notificationIcon.png">
+                    </div>
+                </div>
+                <div class="st-panel">
+                    <div class="st-panel-header">
+                        <div>알림</div>
+                        <div>
+                            <input type="checkbox">모두읽음</span>
+                        </div>
+                    </div>
+                    <div class="st-panel-contents">
+                        <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                          <div class="d-flex text-muted pt-3">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                      
+                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                              <div class="d-flex justify-content-between">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                              </div>
+                              <span class="d-block">@username</span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <button class="btn">menu list</button> -->
+        </div>
+        <div class="bd-mainContent">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <h5>예약 리스트</h5>
+                    </div>
+                    <div class="storageSearchContainer">
+                        
+                        <form class="col-8 border border-0 " style="position: relative" >
+                          <input type="search" class="form-control text-secondary"  name="search" placeholder="검색">
+                        </form>
+                  
+                        <div class="col-2">
+                            <select class="form-select d-inline-block" aria-label="Default select example">
+                                <option value="whole" selected >전체</option>
+                                <option value="product">제품별</option>
+                                <option value="category">카테고리</option>
+                              </select>
+                        </div>
+                        
+                        <button type="submit" class="col-2 btn btn-main">search</button>
+                    </div>
+                    <table class="table shadow-sm p-3 table-hover text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col" id="category">예약번호</th>
+                            <th scope="col" id="productName">시술 날짜</th>
+                            <th scope="col" id="uploadDate">디자이너</th>
+                            <th scope="col" id="price">고객</th>
+                            <th class="col" id="availableStock">시술 내역</th>
+                            <th class="col" id="safetyStock">정산금</th>
+                            <th class="col" id="isSoldOut">정산 여부</th>
+                          </tr>
+                        </thead>
+                        <tbody class="storageTable">
+                          <tr>
+                            <td>3466322</td>
+                            <td>2021.09.20</td>
+                            <td>이희원</td>
+                            <td>박성준</td>
+                            <td>펌</td>
+                            <td>198,000</td>
+                            <td>O</td>
+                          </tr>
+                          <tr>
+                            <td>3466322</td>
+                            <td>2021.09.20</td>
+                            <td>이희원</td>
+                            <td>박성준</td>
+                            <td>펌</td>
+                            <td>198,000</td>
+                            <td>O</td>
+                          </tr>
+                          <tr>
+                            <td>3466322</td>
+                            <td>2021.09.20</td>
+                            <td>이희원</td>
+                            <td>박성준</td>
+                            <td>펌</td>
+                            <td>198,000</td>
+                            <td>O</td>
+                          </tr>
+                          <tr>
+                            <td>3466322</td>
+                            <td>2021.09.20</td>
+                            <td>이희원</td>
+                            <td>박성준</td>
+                            <td>펌</td>
+                            <td>198,000</td>
+                            <td>O</td>
+                          </tr>
+                          <tr>
+                            <td>3466322</td>
+                            <td>2021.09.20</td>
+                            <td>이희원</td>
+                            <td>박성준</td>
+                            <td>펌</td>
+                            <td>198,000</td>
+                            <td>O</td>
+                          </tr>
+                        </tbody>
+                    </table>
+        
+                </div>
+                <div class="col-4">
+                    <ul class="nav nav-pills mb-3 offset-5" id="pills-tab" role="tablist">
+                        <li class="ms-auto nav-item btn-gray border" role="presentation">
+                            <a href="reservationMonthly.html">
+                                <button class="nav-link btn-lightgray" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">월별 예약</button>
+                            </a>
+                        
+                        </li>
+                        <li class="nav-item btn-main text-light rounded" role="presentation">
+                            <a href="reservationList.html"> 
+                                <button class="nav-link text-light " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="true">예약 리스트</button>
+                            </a>
+                        
+                        </li>
+                    </ul>
+                    <div class="card">
+                        <div class="card-header">
+                            예약번호 : 10374932
+                        </div>
+                        <div class="card-body pt-0">
+                            <h5 class="card-title"></h5>
+  
+                          <div class="card-text lh-lg row py-3">
+                                <div class="col-3 fw-bold">디자이너 </div>
+                                <div class="col-9">
+                                    <span id="reDesigner">김영희</span>
+                                </div>
+                                <div class="col-3 fw-bold">고객 </div>
+                                <div class="col-9">
+                                    <span id="reCustomer">김철수</span>
+                                </div>
+                                <div class="col-3 fw-bold"> 이용 시간  </div>
+                                <div class="col-9">
+                                    <span id="reDuration">10:00 - 11:00</span> 
+                                </div>
+                                <div class="col-3 fw-bold">시술 내용  </div>
+                                <div class="col-9">
+                                    <span id="reTitle">뿌리염색(롱) + 헤어 클리닉 + 디자이너  커트
+                                        (아이롱 씨컬펌 )</span>                             </div>
+                                <div class="col-3 fw-bold">시술 재료 </div>
+                                <div class="col-9">
+                                    <span id="reWare">헤어 스티머, 헤어 클리퍼, 전문 커팅 가위, 헤어 
+                                        컬러, 헤어 스트레이트너, 헤어 드라이어,
+                                        염색약(color : 애쉬 그레이)</span>                             
+                                    </div>
+                                <div class="col-3 fw-bold">고객 요구사항 </div>
+                                <div class="col-9">
+                                    <span id="reRequire">트리트먼트 말고 린스 발라주세요</span>                             
+                                </div>
+                                <div class="col-3 fw-bold">수입 </div>
+                                <div class="col-9">
+                                    <span id="reIncome"> 109,000원</span>
+                                </div>
+                            
+                            
+                            
+                            </div>
+                            <div class="card-footer px-0 bg-transparent">
+                                <div class="row g-2">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-outline-secondary w-100">예약취소</button>
+                                    </div>
+                                    <div class="col-8">
+                                        <button type="button" class="btn btn-main w-100">재고 확인하기</button>
+                                    </div>
+                                </div>
+                            </div>
+  
+                            
+                      </div>
+                </div>
+            </div>
+  
+              
+                    
+                
+            </div>
+          </div>
+          
+        
+    </main>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- Add the evo-calendar.js for.. obviously, functionality! -->
+<script src="assets/js/evo-calendar.js"></script>
+<script>
+    $("#calendar").evoCalendar();
+  </script>
+  
+<!-- <script>
+    const menuArr = document.querySelectorAll('#asideForm');
+    menuArr.forEach(function(element){
+        element.addEventListener('click', event => {
+            element.classList.add('activeButton');
+        });
+    })
+    $(document).ready(function () {
+       
+        console.log(menuArr);
+    })
+</script> -->
+
+</body>
+</html>

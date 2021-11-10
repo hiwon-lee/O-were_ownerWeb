@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>accountCreate</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id = "header">
+                <div class="logo">
+                    <img src="assets/src/O'were 로고.svg" style="width: 190px;">
+                </div>
+                <div class="order">
+                    <hr class="line">
+                    <span class="circle1" id="blank">1</span> 
+                    <span class="circle2" id="blank">2</span> 
+                    <span class="circle3" id="blank">3</span> 
+                    <span class="circle4" id="full">4</span>
+                </div>
+            </div>
+            <h2 class=cccsa style="font-weight: bold; text-align: center;">로그인 계정 생성</h2>
+            <div class="enterForm">
+                <form>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="idOrEmail" class="form-label">아이디 혹은 E-Mail</label>
+                            <input type="text" class="form-control form-control-account" name="idOrEmail" id="idOrEmail" placeholder="아이디 혹은 E-mail을 입력하세요." required/>
+                        </div>
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="password" class="form-label">비밀번호</label>
+                            <input type="password" class="form-control form-control-account" name="password" id="password" placeholder="비밀번호를 입력하세요." required/>
+                        </div>
+                    </div>
+                    <div class="enterRow">
+                        <div class="row1">
+                            <label for="rePassword" class="form-label">비밀번호 재입력</label>
+                            <input type="password" class="form-control form-control-account" name="rePassword" id="rePassword" placeholder="비밀번호를 다시 입력하세요." required/>
+                        </div>
+                    </div>
+                </form>
+                <div class="d-grid gap-2">
+                    <button class="btn gradientButtons" type="submit" onclick="location.href='joinComplete.html'">가입하기</button>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+        <script src="assets/js/javascript.js"></script>
+    </body>
+</html>

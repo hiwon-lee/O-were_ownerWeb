@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>authentication</title>
+    </head>
+        <body>
+            <div class="container">
+                <div id = "header">
+                    <div class="logo">
+                        <img src="assets/src/O'were 로고.svg" style="width: 190px;">
+                    </div>
+                    <div class="order">
+                        <hr class="line">
+                        <span class="circle1" id="blank">1</span> 
+                        <span class="circle2" id="full">2</span> 
+                        <span class="circle3" id="blank">3</span> 
+                        <span class="circle4" id="blank">4</span>
+                    </div>
+                </div>
+                <h2 style="font-weight: bold;">실명인증</h2>
+                <div id = "authenticationContent">
+                    <div class = "authenticationButton">
+                        <button class="pass" type="button">
+                            PASS로 간편인증
+                        </button>
+                        <button class="kakao" type="button">
+                            카카오톡으로 간편인증
+                        </button>
+                    </div>
+                    <div class="caution">
+                        <h6>본인 명의의 휴대전화 번호를 이용하여 본인인증을 시도해 주시기 바랍니다.</h6>
+                        <h6>타인 명의의 휴대전화을 이용하시거나 법인 명의의 휴대전화을 이용중인 회원님은</h6>
+                        <h6>휴대전화 본인인증이 불가합니다.</h6>
+                    </div>
+                </div>
+                <div class="btn-bottom">
+                    <button class="back"  onclick="location.href='join.html'">
+                        <i class ="material-icons md-18">arrow_back_ios</i>
+                        <span class="text">이전</span>
+                    </button> 
+                    <button class="next" onclick="location.href='authenticationComplete.html'">
+                        <span class="text">다음</span>
+                        <i class ="material-icons md-18">arrow_forward_ios</i>
+                    </button>
+                </div>
+            </div>
+        </body>
+    </html>

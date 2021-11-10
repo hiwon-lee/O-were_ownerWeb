@@ -1,0 +1,90 @@
+@import url(colorZip.css);
+
+.btn-outline-secondary {
+    color: var(--mainBackgroundColor);
+    background-color: var(--firstMainColor);
+  }
+.btn-outline-secondary:hover {
+    pointer-events: none !important;
+}
+.storageSearchContainer {
+    width:82%;
+    margin:0.8rem auto 1.2rem auto;
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    object-fit: cover;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 70%;
+}
+.bottomBtn {
+    margin-top: 2rem;
+}
+.table-bordered {
+    border-radius: 3rem;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #dee2e6;
+}
+tr>.left{
+    text-align: left;
+    padding: 0.5rem auto;
+}
+tr>.leftAlign{
+    align-items: center;
+}
+.btn-sm-long-approve, .btn-group-sm > .btn {
+  padding: 0.6rem 5rem;
+  font-size: 0.875rem;
+  border-radius: 0.4rem;
+}
+.btn-sm-long-reject, .btn-group-sm > .btn {
+  padding: 0.6rem 2.2rem;
+  font-size: 0.875rem;
+  border-radius: 0.4rem;
+}
+.cut {
+    background-color: var(--secondMainColor);
+    color: white;
+}
+.perm {
+    background-color: var(--firstMainColor);
+    color: white;
+}
+.list-group-item {
+    border: none;
+}
+
+.row1>.left {
+    margin: 0 0 0 0;
+}
+.modal-body .form-select {
+    padding: 0.375rem 11.25rem 0.375rem 0.75rem;
+}
+/*===== NAV PILLS =====*/
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: var(--firstMainColor);
+}
+.nav-pills .nav-link {
+    background: none;
+    border: 1px solid var(--gray70);
+    border-radius: 0.25rem;
+    padding: 6px 12px;
+    
+}
+.nav-link:hover, .nav-link:focus {
+    color: var(--firstMainColor);
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--gray70);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
