@@ -46,8 +46,9 @@
     font-size: var(--semismallfont);
 }
 .priceImg {
-    width:100%;
+    width:6rem;
     height: 8rem;
+
 }
 
 .addinnerImg {
@@ -62,6 +63,12 @@
     width: 8rem;
     height: 8rem;
 }
+.priceTagImgGroup {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: start;
+}
 .priceTagImgGroup div img, #logo {
     object-fit: cover;
     border-radius: 10px;
@@ -69,12 +76,11 @@
 }
 .priceTagImgGroup div  {
     margin:0.6rem;
-    width: 8rem;
+    width: 6rem;
     height: 8rem;
 }
 
 #logo {
-    /* margin:0.6rem; */
     width: 100%;
     height: 8rem;
 }

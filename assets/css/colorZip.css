@@ -68,5 +68,9 @@
     background-color: var(--bordergray);
     border-color: var(--bordergray);
   }
-
+  .btn-lightmain {
+    color: var(--firstMainColor);
+    background-color: var(--firstMainColorlight);
+    border-color: var(--firstMainColor);
+}
 
